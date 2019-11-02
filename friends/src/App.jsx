@@ -12,9 +12,14 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link to='/'>Home</Link>
-        {!signedIn && <Link to='/signin'>Sign In</Link>}
-        {signedIn && <Link to='/account'>Account</Link>}
+        <div>
+          <h2 className='logo'>Lambda Friends</h2>
+        </div>
+        <div>
+          <Link to='/' className='link'>Home</Link>
+          {!signedIn && <Link to='/signin' className='link'>Sign In</Link>}
+          {signedIn && <Link to='/account' className='link'>Account</Link>}
+        </div>
       </nav>
 
       <Route exact path='/signin' component={Signin} />
