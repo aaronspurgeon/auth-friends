@@ -5,6 +5,7 @@ import { Link, Route, withRouter } from "react-router-dom"
 import ProtectedRoute from './components/ProtectedRoute';
 import { getToken } from './utils/api'
 import Account from './components/Account';
+import './App.scss'
 
 function App() {
   const signedIn = getToken()
