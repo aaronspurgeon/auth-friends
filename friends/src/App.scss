@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  //   padding: 30px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.App {
+  margin: 0 auto;
+}
+
+.account-wrapper {
+  display: flex;
+  padding-top: 200px;
+  justify-content: space-evenly;
+  width: 70%;
+
+  .user {
+    align-self: flex-start;
+  }
+
+  .friends-list {
+    // display: flex;
+    // flex-flow: column wrap;
+    // align-content: center;
+    // justify-content: center;
+    // margin: 0 auto;
+
+    img {
+      border-radius: 30%;
+    }
+
+    .friends {
+      display: flex;
+      flex-flow: row wrap;
+      margin-bottom: 40px;
+      align-items: center;
+      justify-content: space-between;
+      width: 500px;
+      background: rgb(149, 211, 211);
+      padding: 20px;
+
+      .friends-details {
+        margin-left: 30px;
+        text-align: center;
+
+        .email {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+
+  input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #f0f0f0;
+  }
+}
+
+.edit {
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  background: transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: dodgerblue;
+    color: white;
+  }
+}
+
+nav {
+  background: black;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+}
