@@ -21,7 +21,7 @@ function Signin(props) {
             .post('/api/login', data)
             .then(res => {
                 localStorage.setItem('token', res.data.payload)
-                console.log(res)
+                props.history.push('/account')
             })
             .catch(err => {
                 setErr(err.response.data.message)
